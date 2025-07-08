@@ -1,0 +1,164 @@
+/* importing fonts of google */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Slab:wght@500&family=Roboto:wght@500;900&display=swap');
+
+/* a root code for using it again and again in code it contains color stuffs */
+
+:root{
+    --green: #16a085;
+    --black: #444;
+    --light-color: #777;
+    --box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+    --text-shadow: .4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border: .2rem solid var(--green);
+    --red: #e40909;
+}
+
+/* styling of html body starts */
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all .2s ease-out;
+}
+
+html{
+    font-size: 62.5%;
+    overflow: scroll;
+    scroll-padding: 7rem;
+    scroll-behavior: smooth; 
+}
+/* appointment css starts */
+.appointment .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+}
+.appointment{
+    background-color: #DCD7c9;
+}
+
+.appointment .row .image{
+    flex: 1 1 45rem;
+}
+
+.appointment .row .image img{
+    width: 100%;
+}
+
+.appointment .row form:hover{
+    box-shadow: 10px 10px 20px grey;
+}
+
+.appointment .row form{
+    flex: 1 1 45rem;
+    background: #fff;
+    border: var(--border);
+    box-shadow: var(--box-shadow); 
+    text-align: center;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.appointment .row form h3{
+    color: var(--black);
+    padding-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.appointment .row form .box{
+    width: 100%;
+    margin: .7rem 0;
+    border-radius: .5rem;
+    border: var(--border);
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none; 
+    padding: 1rem;
+    /* box-shadow: 10px 10px 20px grey; */
+}
+
+.appointment .row form .box-half-app{
+    display: flex;
+    justify-content: space-between;
+}
+
+.appointment .row form .box-half-app .box-half{
+    width: 47%;
+    margin: .7rem 0;
+    border-radius: .5rem;
+    border: var(--border);
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none; 
+    padding: 1rem;
+}
+
+.appointment .row form .problem{
+    width: 100%;
+    margin-top: .7rem;
+    border: var(--border);
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    padding-bottom: 10rem;
+}
+
+/* .appointment .row form .problem::after{
+    content: "\a";
+    white-space: inherit;
+} */
+
+.appointment .row form .btn{
+    padding: 1rem 4rem;
+}
+.footer .box-containers{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr)); 
+}
+
+.footer .box-containers .box h3{
+    font-size: 2.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box-containers .box a{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+.footer .box-containers .box a i{
+    padding-right: .5rem;
+    color: var(--green);
+}
+
+.footer .box-containers .box a:hover i{
+    padding-right: 2rem;
+}
+
+.footer .credit{
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--light-color);
+    border-top: .1rem solid black; 
+}
+
+.footer .credit span{
+    color: var(--green);
+}

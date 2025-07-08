@@ -1,0 +1,183 @@
+/* same root file used in style.css  */
+
+:root{
+    --green: #663333 ;
+    --black: #444;
+    --light-color: #777;
+    --box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+    --text-shadow: .4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border: #663333;
+    --red: #e40909;
+}
+
+/* heading for servicies css */
+
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    text-shadow: var(--text-shadow);
+    text-transform: uppercase;
+    color: #663333;
+    font-size: 5rem;
+    letter-spacing: .4rem;
+    /* margin-top: 7rem; */
+}
+
+.heading span{
+    text-transform: uppercase;
+    color: #663333;
+}
+
+
+.services .box-container .box{
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: 2.5rem;
+}
+
+.services .box-container .box:hover{
+    box-shadow: 10px 10px 20px grey;
+}
+
+.services .box-container .box i{
+    color: var(--green);
+    font-size: 5rem;
+    padding-bottom: .5rem;
+}
+
+.services .box-container .box h3{
+    color: var(--black);
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+.services .box-container.box p{
+    color: var(--light-color);
+    font-size: 1.4rem;
+    line-height: 2;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.services {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.heading {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.heading span {
+  color: #663333;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.box {
+  background-color: #fafafa;
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+.box h3 {
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+.image-popup {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.image-popup img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #663333;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+.box h3 {
+  margin-bottom: 15px;
+  color: #663333; /* اللون اللي طلبته */
+  font-size: 20px;
+}
+
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  z-index: 1000;
+  transition: 0.3s;
+  user-select: none;
+  border-radius: 5px;
+}
+
+#prevBtn {
+  left: 20px;
+}
+
+#nextBtn {
+  right: 20px;
+}
+
+.nav-btn:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.hidden {
+  display: none;
+}
+
+
+
